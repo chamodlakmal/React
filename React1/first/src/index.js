@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-
+import {Router, Route, Switch} from 'react-router-dom';
+import createBrowserHistory from 'history/createBrowserHistory';
 import App from './components/App';
+import Jokes from './components/Jokes';
 import './index.css';
 
-ReactDom.render(<App/>, document.getElementById('root'));
+const history = createBrowserHistory();
 
-new Promise(resolve=>{
-    setTimeout(()=>{
-        console.log('Bears');
-        resolve();
-    },2000);
-}).then(()=>{
-    console.log('Beets')
-    console.log('Beets 123')
-})
+ReactDom.render(
+    <Router history={history}>
+        <Switch>
+            <Route exact={true} path='/' component={App}></Route>
+            <Route path='/jokes' component={Jokes}></Route>
+        </Switch>
+    </Router>,
+    document.getElementById('root'));

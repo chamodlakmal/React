@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Header from "./Header";
 
 const Joke = ({joke: {setup, punchline}}) =>
     <p style={{margin: 20}}>{setup}<em>{punchline}</em></p>
@@ -10,21 +11,21 @@ class Jokes extends Component {
     componentDidMount() {
         fetch('https://official-joke-api.appspot.com/random_joke').then(response => response.json()).then(
             json => this.setState({joke: json})
-        )
+        ).catch(error => alert(error.message))
 
     }
 
     fetchJokes = () => {
-        this.setState({
-            jokes: fetch('https://official-joke-api.appspot.com/random_ten').then(response => response.json()).then(
-                json => this.setState({jokes: json})
-            )
-        })
+        fetch('https://official-joke-api.appspot.com/random_ten').then(response => response.json()).then(
+            json => this.setState({jokes: json})
+        ).catch(error => alert(error.message))
+
     }
 
     render() {
         return (
             <div>
+                <Header/>
                 <h2>Highlighted Joke</h2>
                 <Joke joke={this.state.joke}/>
                 <hr/>

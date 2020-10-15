@@ -3,8 +3,7 @@ import Projects from './Projects';
 import SocialProfiles from './SocialProfile';
 import profile from '../assets/profile.png';
 import Title from './Title';
-import Jokes from './Jokes';
-
+import Header from './Header';
 class App extends Component {
 
     constructor() {
@@ -20,6 +19,7 @@ class App extends Component {
     render() {
         return (
             <div>
+                <Header/>
                 <img src={profile} alt='profile' className='profile' style={{width: 100, height: 100}}/>
                 <h1>Hello!</h1>
                 <p>I am Chamod Lakmal</p>
@@ -38,8 +38,7 @@ class App extends Component {
                 <hr/>
                 <Projects/>
                 <SocialProfiles/>
-                <hr/>
-                <Jokes/>
+
             </div>
         )
     }
