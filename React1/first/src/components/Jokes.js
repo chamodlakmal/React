@@ -15,9 +15,11 @@ class Jokes extends Component {
     }
 
     fetchJokes = () => {
-        this.state.jokes = fetch('https://official-joke-api.appspot.com/random_ten').then(response => response.json()).then(
-            json => this.setState({jokes: json})
-        )
+        this.setState({
+            jokes: fetch('https://official-joke-api.appspot.com/random_ten').then(response => response.json()).then(
+                json => this.setState({jokes: json})
+            )
+        })
     }
 
     render() {
