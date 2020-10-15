@@ -17,7 +17,7 @@ class Tracks extends Component {
                 this.setState({playing: false})
             } else {
                 audio.play();
-                this.setState({audio, playingPreviewUrl: previewUrl})
+                this.setState({audio, playingPreviewUrl: previewUrl});
             }
 
 
