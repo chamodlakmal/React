@@ -4,7 +4,7 @@ import '../App.css';
 function App() {
     return (
         <div>
-            ChamiViews React App
+            Music Master React App
         </div>
     );
 }

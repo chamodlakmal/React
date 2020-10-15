@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccb9e596-65fa-4394-bd2e-3e1c838823ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../music-master/src/assets/economica-bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../music-master/src/assets/roboto-condensed.light.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music-master/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../music-master/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music-master/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../music-master/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../music-master/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -256,7 +252,7 @@
       <workItem from="1602686620037" duration="3342000" />
       <workItem from="1602725534153" duration="1719000" />
       <workItem from="1602730946017" duration="7796000" />
-      <workItem from="1602739344425" duration="8513000" />
+      <workItem from="1602739344425" duration="8790000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1602739386149</created>
@@ -290,7 +286,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39787000" />
+    <option name="totallyTimeSpent" value="40064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
