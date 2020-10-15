@@ -1,12 +1,19 @@
-import React from 'react';
+import React, {Component} from 'react';
 import '../App.css';
 
-function App() {
-    return (
-        <div>
-            Music Master React App
-        </div>
-    );
+class App extends Component {
+    state = {artistQuery: ''};
+
+    render() {
+        return (
+            <div>
+                <h2>Music Master</h2>
+                <input placeholder='Search for an Artist'/>
+                <button>Search</button>
+            </div>
+        );
+    }
+
 }
 
 export default App;
