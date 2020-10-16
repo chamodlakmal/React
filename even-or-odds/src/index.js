@@ -6,12 +6,30 @@ import * as serviceWorker from './serviceWorker';
 import {createStore} from 'redux';
 
 
-const rootReducer = () => {
-    return {foo: 'bar'}
+const DEFAULT_SETTING = {
+    gameStarted: false,
+    instructionsExpanded: false
+};
+
+const rootReducer = (state, action) => {
+    console.log('state', action, ' action', action);
+
+    if (action.type === 'SET_GAME_STARTED') {
+        return {
+            gameStarted: action.gameStarted,
+            instructionsExpanded: false
+        }
+    }
+
+    return DEFAULT_SETTING;
 };
 
 const store = createStore(rootReducer);
 console.log('store', store);
+
+const action1 = {gameStarted: true, type: 'SET_GAME_STARTED'};
+
+store.dispatch(action1);
 
 
 ReactDOM.render(
