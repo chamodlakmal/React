@@ -8,13 +8,6 @@ import rootReducer from './reducers';
 import {Provider} from "react-redux";
 
 const store = createStore(rootReducer);
-console.log('store', store.getState());
-const action1 = {gameStarted: true, type: 'SET_GAME_STARTED'};
-
-store.dispatch(action1);
-
-console.log('store', store.getState());
-
 
 ReactDOM.render(
     <Provider store={store}><App/></Provider>,
