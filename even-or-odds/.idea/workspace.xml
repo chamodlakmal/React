@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a81622a0-fae4-4daf-8b65-e5a71b9e0c47" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../React1/first/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../React1/first/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redux-sample/src/actions/postAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
