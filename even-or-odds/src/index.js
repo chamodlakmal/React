@@ -20,7 +20,6 @@ const rootReducer = (state, action) => {
             instructionsExpanded: false
         }
     }
-
     return DEFAULT_SETTING;
 };
 
