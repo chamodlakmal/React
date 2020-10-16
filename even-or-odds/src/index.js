@@ -4,37 +4,20 @@ import './index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 import {createStore} from 'redux';
-
-
-const DEFAULT_SETTING = {
-    gameStarted: false,
-    instructionsExpanded: false
-};
-
-const rootReducer = (state, action) => {
-    console.log('state', action, ' action', action);
-
-    if (action.type === 'SET_GAME_STARTED') {
-        return {
-            gameStarted: action.gameStarted,
-            instructionsExpanded: false
-        }
-    }
-    return DEFAULT_SETTING;
-};
+import rootReducer from './reducers';
+import {Provider} from "react-redux";
 
 const store = createStore(rootReducer);
-console.log('store', store);
-
+console.log('store', store.getState());
 const action1 = {gameStarted: true, type: 'SET_GAME_STARTED'};
 
 store.dispatch(action1);
 
+console.log('store', store.getState());
+
 
 ReactDOM.render(
-    <React.StrictMode>
-        <App/>
-    </React.StrictMode>,
+    <Provider store={store}><App/></Provider>,
     document.getElementById('root')
 );
 

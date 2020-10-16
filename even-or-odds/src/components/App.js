@@ -1,12 +1,19 @@
-import React from 'react';
+import React, {Component} from 'react';
 import '../App.css';
+import {connect} from "react-redux";
 
-function App() {
-    return (
-        <div>
-            Even OR Odd React App
-        </div>
-    );
+class App extends Component {
+    render() {
+        console.log(this);
+        return (
+            <div>
+                Even OR Odd React App
+            </div>
+        );
+    }
+
 }
 
-export default App;
+const componentConnector = connect();
+
+export default componentConnector(App);
