@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import '../App.css';
 import {connect} from "react-redux";
 import {cancelGame, startGame} from "../actions/settings";
+import Instructions from "./Instructions";
 
 class App extends Component {
 
@@ -23,9 +24,12 @@ class App extends Component {
                             <h3>A new game awaits!</h3>
                             <br/>
                             <button onClick={this.props.startGame}>Start Game</button>
+                            <hr/>
+                            <Instructions/>
                         </div>
                     )
                 }
+
             </div>
         );
     }
@@ -33,7 +37,6 @@ class App extends Component {
 }
 
 const mapStateToProps = state => {
-    console.log(state.gameStarted);
     return {gameStarted: state.gameStarted}
 };
 
