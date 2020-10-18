@@ -4,6 +4,7 @@ import {connect} from "react-redux";
 import {cancelGame, startGame} from "../actions/settings";
 import Instructions from "./Instructions";
 import {fetchNewDeck} from "../actions/deck";
+import fetchStates from '../reducers/fetchState';
 
 class App extends Component {
 
@@ -11,10 +12,23 @@ class App extends Component {
         this.props.startGame();
         this.props.fetchNewDeck();
 
+
     };
 
 
     render() {
+
+        if (this.props.fetchState === fetchStates.error) {
+            return (
+                <div>
+                    <p>Please try to reload the app. An error occurred.</p>
+                    <p>
+                        {this.props.message}
+                    </p>
+                </div>
+            )
+        }
+
         return (
             <div>
                 <h2>♠️ ♣️ Evens or Odds ♦ ️♥️️</h2>
@@ -43,7 +57,13 @@ class App extends Component {
 }
 
 const mapStateToProps = state => {
-    return {gameStarted: state.gameStarted}
+
+    const {
+        settings: {gameStarted},
+        deck: {fetchState, message}
+    } = state;
+
+    return {gameStarted, fetchState, message}
 };
 
 // const mapDispatchToProps = dispatch => {
@@ -54,6 +74,6 @@ const mapStateToProps = state => {
 //     };
 // };
 
-const componentConnector = connect(mapStateToProps, {startGame,cancelGame,fetchNewDeck});
+const componentConnector = connect(mapStateToProps, {startGame, cancelGame, fetchNewDeck});
 
 export default componentConnector(App);
