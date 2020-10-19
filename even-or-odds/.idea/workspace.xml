@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a81622a0-fae4-4daf-8b65-e5a71b9e0c47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/GameState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Guess.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Guess.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/gameState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/gameState.js" afterDir="false" />
-    </list>
+    <list default="true" id="a81622a0-fae4-4daf-8b65-e5a71b9e0c47" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,9 +152,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="27" />
-    <option name="width" value="1478" />
-    <option name="height" value="1030" />
+    <option name="x" value="2160" />
+    <option name="y" value="104" />
+    <option name="width" value="1468" />
+    <option name="height" value="748" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -282,7 +277,7 @@
       <workItem from="1602858736178" duration="1224000" />
       <workItem from="1602907239681" duration="14000" />
       <workItem from="1602954183113" duration="4913000" />
-      <workItem from="1602986621185" duration="25564000" />
+      <workItem from="1602986621185" duration="26324000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1602748489241</created>
@@ -368,15 +363,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603041355527</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="final">
+      <created>1603044658068</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1603044658068</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57354000" />
+    <option name="totallyTimeSpent" value="58114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16061899" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -425,7 +426,8 @@
     <MESSAGE value="thunk added" />
     <MESSAGE value="settings added" />
     <MESSAGE value="guess even or odd" />
-    <option name="LAST_COMMIT_MESSAGE" value="guess even or odd" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
