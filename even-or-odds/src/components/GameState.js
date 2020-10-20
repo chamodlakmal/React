@@ -16,7 +16,7 @@ const checkRecord = correctGuesses => {
 
 };
 
-const GameState = ({remaining, correctGuesses}) => {
+const GameState = ({correctGuesses, remaining}) => {
     const guessText = correctGuesses === 1 ? 'guess' : 'guesses';
 
     const {record, isNewRecord} = checkRecord(correctGuesses);
@@ -31,9 +31,15 @@ const GameState = ({remaining, correctGuesses}) => {
     )
 };
 
-export default connect(
-    ({
+function mapStateToProps(state) {
+    return {correctGuesses: state.gameState.correctGuesses, remaining: state.deck.remaining}
+
+}
+
+
+export default connect(mapStateToProps
+    /*({
          deck: {remaining},
          gameState: {correctGuesses}
-     }) => ({remaining, correctGuesses})
+     }) => ({remaining, correctGuesses})*/
 )(GameState)
